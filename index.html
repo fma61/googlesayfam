@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url(Uzungöl_lake_and_town.jpg);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container, #container2 {
+            width: 400px;
+            height: 300px;
+            background-color: #D2E3C8;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 60px;
+            display: flex;
+            flex-direction: column
+            
+        }
+         
+
+        #logo,#logo2 {
+            text-align: center;
+            margin-bottom: 3%;
+        }
+
+
+        #search-box,#search-box2 {
+            width: 94%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        #search-button,#search-submit {
+            background-color: #102a55;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            outline: none;
+            width: 100%;
+            display: block;
+            margin-top: 10px;
+            float: left; 
+        }
+
+        #search-button2,#search-submit2{
+            background-color: maroon;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            outline: none;
+            width: 100%;
+            display: block;
+            margin-top: 10px;
+            float: left;
+        }
+
+        #footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+        }
+
+        #footer a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        #footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="logo">
+            <img src="oldgoogle.gif" alt="Google Logo" height="92">
+        </div>
+        
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" id="search-box" name="q" placeholder="Google'da Ara">
+            <input type="submit" id="search-button" value="Google Search">
+            <input type="submit" id="search-submit" value="I'm feeling lucky">
+        </form>
+
+        <div id="footer">
+            <a href="https://www.google.com/about/">About Google</a> | 
+            <a href="https://ads.google.com/">Advertising</a> | 
+            <a href="https://www.google.com/services/">Business Solutions</a> | 
+            <a href="https://policies.google.com/privacy">Privacy</a>
+        </div>
+    </div>
+
+    <div id="container2">
+        <div id="logo2">
+            <img src="mail.jpg" alt="Mail Logo" height="90">
+        </div>
+
+
+        <form action="/action_page.php" method="get">
+            <input type="text" id="search-box2" name="w" placeholder="Get Google! Updates monthly">
+            <input type="submit" id="search-button2" value="Subscribe">
+            <input type="submit" id="search-submit2" value="Archive">
+        </form>
+    </div>
+
+</body>
+</html>
+
